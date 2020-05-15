@@ -1,20 +1,20 @@
-# ohm-sweet-ohm
-Kraftwerk's 'Ohm Sweet Ohm' realised using ChucK programming language
+# Ohm Sweet Ohm
+Recreation of Kraftwerk's song 'Ohm Sweet Ohm' using the ChucK language and incorporating generative note sequencing.
 
 
 
-John Linnane
-118227214
-MscIM
-2018/2019
+## Primary Language
+
+ChucK
 
 
+## Getting Started
 
-**** Please open Initialise.ck to play project ****
+[Install ChucK](https://chuck.cs.princeton.edu/release/)
 
+Open Initialise.ck to play project 
 
-
-OVERALL FEATURES
+## Description
 
 In my project I used SinOsc,and Saw Osc generators.
 I also used a SinOsc signal to cause a vibrato on a SawOsc in my MainMelody class.
@@ -36,7 +36,7 @@ For spatial modulation I used a slow pan from left to right on my wave file whic
 
 
 
-PROGRAMMING CONCEPTS
+### Programming Concepts
 
 I used both a while loop to loop through arrays in my MainMelody used a for loop for the same purpose in BassMelody1.
 
@@ -44,16 +44,11 @@ I created some functions, including one which increases the bmp after a measure 
 
 I used overloading in the Arpeggiator function. This allowed different arrays of notes to be passed in. I had a bit of trouble passing array values between classes, so this second Arpeggiator ended up not being used.
 
-
-CONCURRENCY AND PROCESS COMPONENTS
+### Concurrency and Process Components
 
 I used Machine.Add to load all ChucK files concurrently in my Initialize file. This enabled me to communicate betweeen all global classes.
 
 For event handling I used the Hid generator to call a sound buffer (SndBuf) when the 'O' key is pressed. This sound file is slowly panned from left to right.
-
-********************
-
-The song is an interpretation of ‘Ohm Sweet Ohm’ by Kraftwerk.
 
 
 
