@@ -18,8 +18,8 @@ Open Initialise.ck to play project
 
 In my project I used SinOsc,and Saw Osc generators.
 I also used a SinOsc signal to cause a vibrato on a SawOsc in my MainMelody class.
-I used the Noise generator, along with LPF, Impulse and Gain to synthesise a snare drum sound. This file was not used as the large number of generators was too processing intensive for the system.
-I used a SinOsc, ADSR filter, Step generator and Envelope generator to synthesize a kick drum sound.
+I used the Noise generator, along with LPF, Impulse and Gain to synthesise a snare drum sound. 
+A SinOsc, ADSR filter, Step generator and Envelope generator were used to synthesize a kick drum sound.
 
 For random note generation I created an arpeggiator class using the Math.random function. This cycles through an array of defined notes in random order.
 
